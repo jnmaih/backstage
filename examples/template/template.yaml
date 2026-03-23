@@ -62,6 +62,8 @@ spec:
           name: ${{ parameters.name }}
           owner: ${{ parameters.owner }}
           classpath: ${{ parameters.classpath }}
+          repoOwner: ${{ (parameters.repoUrl | parseRepoUrl).owner }}
+          repoName: ${{ (parameters.repoUrl | parseRepoUrl).repo }}
           creatorDisplayName: ${{ user.entity.spec.profile.displayName or user.entity.metadata.name or parameters.owner }}
 
     # This step publishes the contents of the working directory to GitHub.
