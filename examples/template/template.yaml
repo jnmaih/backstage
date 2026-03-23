@@ -16,6 +16,7 @@ spec:
       required:
         - name
         - owner
+        - classpath
       properties:
         name:
           title: Component name
@@ -30,6 +31,11 @@ spec:
           description: Owner entity reference (for example user:guest or group:default/team-b)
           default: user:guest
           ui:field: OwnerPicker
+        classpath:
+          title: Classpath
+          type: string
+          description: Logical code namespace or classpath (for example com.example.platform.nginx)
+          default: com.example.demo.nginx
     - title: Repository destination
       required:
         - repoUrl
@@ -55,6 +61,7 @@ spec:
         values:
           name: ${{ parameters.name }}
           owner: ${{ parameters.owner }}
+          classpath: ${{ parameters.classpath }}
           creatorDisplayName: ${{ user.entity.spec.profile.displayName or user.entity.metadata.name or parameters.owner }}
 
     # This step publishes the contents of the working directory to GitHub.

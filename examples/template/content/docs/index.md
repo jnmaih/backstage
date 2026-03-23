@@ -7,6 +7,7 @@ This component is scaffolded using `demo-nginx-cncf-nbg-cicd-template`.
 - CI: GitHub Actions at `.github/workflows/ci.yaml`
 - creator: `${{ values.creatorDisplayName }}`
 - owner: `${{ values.owner }}`
+- classpath: `${{ values.classpath }}`
 
 ## What this provides
 

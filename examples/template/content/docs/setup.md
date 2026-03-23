@@ -5,6 +5,7 @@
 3. Fill in fields:
    - Name: `demo-nginx-cncf-nbg` (or your component name)
    - Owner: `user:guest` or your own user/group entity reference
+   - Classpath: `com.example.demo.nginx` (or your preferred namespace)
    - Repository Location: `https://github.com/<your-org>/<your-repo>`
 4. Run the template. It will:
    - create your repo content in GitHub

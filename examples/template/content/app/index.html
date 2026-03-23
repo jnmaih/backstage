@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>demo-nginx</title>
+    <title>${{ values.name }}</title>
   </head>
   <body>
-    <h1>demo-nginx sample app</h1>
+    <h1>${{ values.name }} sample app</h1>
     <p>This content is served from the scaffolded service.</p>
+    <p>Classpath: ${{ values.classpath }}</p>
   </body>
 </html>
