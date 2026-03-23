@@ -61,6 +61,7 @@ metadata:
     backstage.io/kubernetes-label-selector: app=demo-nginx
     backstage.io/kubernetes-id: demo-nginx
     backstage.io/techdocs-ref: "dir: demo-nginx"
+    endoflife.date/products: nginx@1.25
 
 spec:
   type: service

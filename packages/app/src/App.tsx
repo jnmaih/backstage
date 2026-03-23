@@ -37,6 +37,8 @@ import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
 import { NotificationsPage } from '@backstage/plugin-notifications';
 import { SignalsDisplay } from '@backstage/plugin-signals';
+import { ToolboxPage } from '@drodil/backstage-plugin-toolbox';
+import { TechRadarPage } from '@backstage-community/plugin-tech-radar';
 
 import { configApiRef, githubAuthApiRef, useApi } from '@backstage/core-plugin-api';
 
@@ -109,6 +111,8 @@ const routes = (
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
     <Route path="/notifications" element={<NotificationsPage />} />
+    <Route path="/toolbox" element={<ToolboxPage />} />
+    <Route path="/tech-radar" element={<TechRadarPage width={1500} height={800} />} />
   </FlatRoutes>
 );
 
