@@ -1,5 +1,6 @@
 site_name: "${{ values.name }} TechDocs"
 site_description: Demo nginx sample for Backstage TechDocs with GitHub CI
+site_author: "${{ values.creatorDisplayName }}"
 nav:
   - Home: index.md
   - Setup: setup.md

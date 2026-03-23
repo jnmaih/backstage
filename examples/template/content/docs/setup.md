@@ -10,6 +10,7 @@
    - create your repo content in GitHub
    - push to `main`
    - register the component in the Backstage catalog
+   - render TechDocs with creator metadata derived from the signed-in Backstage user
 
 ## GitHub Actions
 
