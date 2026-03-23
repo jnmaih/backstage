@@ -2,9 +2,9 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: example-nodejs-template
-  title: Example Node.js Template
-  description: An example template for the scaffolder that creates a simple Node.js service
+  name: demo-nginx-cncf-nbg-cicd-template
+  title: Demo NGINX CNCF NBG CI/CD Template
+  description: A template that scaffolds the demo-nginx-cncf-nbg service with TechDocs and GitHub Actions CI workflow.
 spec:
   owner: user:guest
   type: service
@@ -12,24 +12,25 @@ spec:
   # These parameters are used to generate the input form in the frontend, and are
   # used to gather input data for the execution of the template.
   parameters:
-    - title: Fill in some steps
+    - title: Component metadata
       required:
         - name
       properties:
         name:
-          title: Name
+          title: Component name
           type: string
           description: Unique name of the component
           ui:autofocus: true
           ui:options:
             rows: 5
-    - title: Choose a location
+    - title: Repository destination
       required:
         - repoUrl
       properties:
         repoUrl:
           title: Repository Location
           type: string
+          description: Full GitHub HTTPS repository URL (e.g. https://github.com/youruser/demo-nginx-cncf-nbg)
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:

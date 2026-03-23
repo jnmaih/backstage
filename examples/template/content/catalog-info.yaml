@@ -2,6 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ${{ values.name | dump }}
+  annotations:
+    # If your repository has TechDocs content in `docs/`, local builds can use this
+    # in Backstage with the TechDocs plugin.
+    backstage.io/techdocs-ref: 'dir: docs'
+    # Optionally trigger the GitHub Actions plugin (if installed).
+    # Replace with your own GitHub slug in the entity after registration.
+    github.com/project-slug: 'jnmaih/${{ values.name | dump }}'
 spec:
   type: service
   owner: user:guest

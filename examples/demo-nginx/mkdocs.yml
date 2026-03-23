@@ -1,0 +1,13 @@
+site_name: demo-nginx TechDocs
+site_description: Demo nginx component docs for TechDocs documentation-as-code example
+site_author: Backstage Example
+repo_name: demo-nginx
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - Architecture: architecture.md
+  - Run: run.md
+plugins:
+  - techdocs-core
+extra:
+  generator: techdocs

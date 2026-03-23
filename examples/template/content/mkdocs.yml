@@ -1,0 +1,9 @@
+site_name: demo-nginx TechDocs
+site_description: Demo nginx sample for Backstage TechDocs with GitHub CI
+nav:
+  - Home: index.md
+  - Setup: setup.md
+plugins:
+  - techdocs-core
+extra:
+  generator: techdocs

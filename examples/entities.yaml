@@ -39,3 +39,30 @@ spec:
     message ExampleMessage {
       string example = 1;
     };
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jnmaih
+spec:
+  profile:
+    displayName: Juergen Maihoefner
+    email: juergen@example.com
+  memberOf: [backstage, boxoffice, team-b]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-nginx-cncf-nbg
+  namespace: default
+  annotations:
+    backstage.io/kubernetes-cluster: local
+    backstage.io/kubernetes-namespace: backstage-demo
+    backstage.io/kubernetes-label-selector: app=demo-nginx
+    backstage.io/kubernetes-id: demo-nginx
+    backstage.io/techdocs-ref: "dir: demo-nginx"
+
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-b
