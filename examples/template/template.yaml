@@ -57,6 +57,7 @@ spec:
       input:
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
+        repoVisibility: public
         defaultBranch: 'main'
 
     # The final step is to register our new component in the catalog.
