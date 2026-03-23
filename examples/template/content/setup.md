@@ -21,7 +21,7 @@ Pipeline file: `.github/workflows/ci.yaml`
 ## Backstage validation
 
 1. Open created component in Backstage via catalog.
-2. Go to **Docs** tab -> TechDocs content is rendered from this repo.
+2. Go to **Docs** tab -> TechDocs content is rendered from this repository root.
 3. Go to **CI/CD** tab -> after plugin setup, status can show GitHub Actions checks.
 
 ## Optional entity annotation for GitHub Actions plugin
@@ -37,5 +37,5 @@ metadata:
 And add the `backstage.io/techdocs-ref` annotation if missing:
 
 ```yaml
-    backstage.io/techdocs-ref: "dir: docs"
+    backstage.io/techdocs-ref: "dir: ."
 ```

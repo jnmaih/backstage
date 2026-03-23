@@ -3,7 +3,7 @@
 This component is scaffolded using `demo-nginx-cncf-nbg-cicd-template`.
 
 - service: NGINX placeholder
-- docs: TechDocs is served from this repository (`docs/`)
+- docs: TechDocs is served from this repository root
 - CI: GitHub Actions at `.github/workflows/ci.yaml`
 
 ## What this provides

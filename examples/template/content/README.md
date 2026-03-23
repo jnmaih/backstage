@@ -7,8 +7,8 @@ Generated repository structure:
 - catalog-info.yaml
 - README.md
 - mkdocs.yml
-- docs/index.md
-- docs/setup.md
+- index.md
+- setup.md
 - .github/workflows/ci.yaml
 - app/ (container sample, placeholder)
 
