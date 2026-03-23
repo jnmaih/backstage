@@ -4,6 +4,7 @@
 2. Select **Demo NGINX CNCF NBG CI/CD Template**.
 3. Fill in fields:
    - Name: `demo-nginx-cncf-nbg` (or your component name)
+   - Owner: `user:guest` or your own user/group entity reference
    - Repository Location: `https://github.com/<your-org>/<your-repo>`
 4. Run the template. It will:
    - create your repo content in GitHub
@@ -30,8 +31,11 @@ Update the component metadata with:
 
 ```yaml
 metadata:
+   name: "<component-name>"
   annotations:
     github.com/project-slug: "<your-org>/<your-repo>"
+spec:
+   owner: "<owner-entity-ref>"
 ```
 
 And add the `backstage.io/techdocs-ref` annotation if missing:

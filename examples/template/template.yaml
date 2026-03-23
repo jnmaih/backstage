@@ -15,6 +15,7 @@ spec:
     - title: Component metadata
       required:
         - name
+        - owner
       properties:
         name:
           title: Component name
@@ -23,6 +24,12 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
+        owner:
+          title: Owner
+          type: string
+          description: Owner entity reference (for example user:guest or group:default/team-b)
+          default: user:guest
+          ui:field: OwnerPicker
     - title: Repository destination
       required:
         - repoUrl
@@ -47,6 +54,7 @@ spec:
         url: ./content
         values:
           name: ${{ parameters.name }}
+          owner: ${{ parameters.owner }}
 
     # This step publishes the contents of the working directory to GitHub.
     # If you or your organization prefer another default branch name over 'main'

@@ -1,4 +1,4 @@
-site_name: demo-nginx TechDocs
+site_name: "${{ values.name }} TechDocs"
 site_description: Demo nginx sample for Backstage TechDocs with GitHub CI
 nav:
   - Home: index.md

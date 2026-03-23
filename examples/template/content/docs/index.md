@@ -1,10 +1,11 @@
-# demo-nginx-cncf-nbg sample
+# ${{ values.name }}
 
 This component is scaffolded using `demo-nginx-cncf-nbg-cicd-template`.
 
 - service: NGINX placeholder
 - docs: TechDocs is served from this repository (`docs/`)
 - CI: GitHub Actions at `.github/workflows/ci.yaml`
+- creator: `${{ values.owner }}`
 
 ## What this provides
 
