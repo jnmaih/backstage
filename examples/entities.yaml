@@ -62,7 +62,11 @@ metadata:
     backstage.io/kubernetes-id: demo-nginx
     backstage.io/techdocs-ref: "dir: demo-nginx"
     endoflife.date/products: nginx@1.25
-
+    sonarqube.org/project-key: sonarlint-visualstudio
+  links:
+   - url: https://community.cncf.io/cloud-native-nurnberg/
+     title: CNCF Nuremberg
+     icon: dashboard
 spec:
   type: service
   lifecycle: experimental

@@ -66,6 +66,8 @@ import {
   EntityEndOfLifeCard,
   isEndOfLifeAvailable,
 } from '@dweber019/backstage-plugin-endoflife';
+import { EntitySonarQubeCard } from '@backstage/plugin-sonarqube';
+import { isSonarQubeAvailable } from '@backstage-community/plugin-sonarqube-react';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -161,6 +163,15 @@ const overviewContent = (
         </Grid>
       </EntitySwitch.Case>
     </EntitySwitch>
+
+        <EntitySwitch>
+      <EntitySwitch.Case if={isSonarQubeAvailable}>
+        <Grid item md={6}>
+          <EntitySonarQubeCard variant="gridItem" />
+        </Grid>
+      </EntitySwitch.Case>
+    </EntitySwitch>
+    
   </Grid>
 );
 

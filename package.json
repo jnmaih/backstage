@@ -54,5 +54,11 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@4.4.1"
+  "packageManager": "yarn@4.4.1",
+  "dependencies": {
+    "@backstage-community/plugin-sonarqube-backend": "^1.0.0",
+    "@backstage-community/plugin-sonarqube-react": "^1.0.0",
+    "@backstage/plugin-sonarqube": "^0.7.17",
+    "@backstage/plugin-sonarqube-backend": "^0.2.20"
+  }
 }
